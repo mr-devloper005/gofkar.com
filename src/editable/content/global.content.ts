@@ -3,48 +3,44 @@ import { slot4BrandConfig } from '@/editable/theme/brand.config'
 export const globalContent = {
   site: {
     name: slot4BrandConfig.siteName,
-    tagline: slot4BrandConfig.tagline || 'Independent reading platform',
+    tagline: slot4BrandConfig.tagline || 'Curated links, strong reads, and premium discovery',
     domain: slot4BrandConfig.domain,
     baseUrl: slot4BrandConfig.baseUrl,
   },
   nav: {
-    tagline: 'Independent reading platform',
-    primaryLinks: [
-      { label: 'Articles', href: '/articles' },
-      { label: 'Visuals', href: '/image-sharing' },
-      { label: 'Listings', href: '/listings' },
+    tagline: '',
+    utilityLinks: [
+      { label: 'Join our list', href: '/signup' },
       { label: 'Contact', href: '/contact' },
     ],
+    primaryLinks: [
+      { label: 'Latest', href: '/article' },
+      { label: 'Bookmarks', href: '/social-bookmarking' },
+      { label: 'Discover', href: '/search' },
+      { label: 'Directory', href: '/business-listing' },
+    ],
     actions: {
-      primary: { label: 'Start exploring', href: '/' },
-      secondary: { label: 'Submit', href: '/contact' },
+      primary: { label: 'Post a link', href: '/create' },
+      secondary: { label: 'Login', href: '/login' },
     },
   },
   footer: {
-    tagline: 'Stories, resources, and discoverable posts',
-    description: 'A connected publishing surface for articles, visuals, listings, profiles, bookmarks, and downloadable resources.',
+    tagline: 'Premium discovery, thoughtful curation, and elegant browsing.',
+    description:
+      'A modern social bookmarking hub where users can discover, save, and share useful websites, articles, resources, and online tools. Curate your favorite content, explore trending discoveries, and connect through shared knowledge.',
     columns: [
       {
-        title: 'Explore',
-        links: [
-          { label: 'Articles', href: '/articles' },
-          { label: 'Listings', href: '/listings' },
-          { label: 'Images', href: '/image-sharing' },
-          { label: 'PDF Library', href: '/pdf' },
-        ],
-      },
-      {
-        title: 'Site',
+        title: 'Company',
         links: [
           { label: 'About', href: '/about' },
           { label: 'Contact', href: '/contact' },
         ],
       },
     ],
-    bottomNote: 'Built for clean discovery and connected publishing.',
+    bottomNote: 'Designed for clear curation, memorable reading, and effortless sharing.',
   },
   commonLabels: {
-    readMore: 'Read more',
+    readMore: 'Open story',
     viewAll: 'View all',
     explore: 'Explore',
     latest: 'Latest',
